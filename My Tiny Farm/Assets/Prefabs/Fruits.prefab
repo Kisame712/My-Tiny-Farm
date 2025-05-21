@@ -42,6 +42,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8474051507879304632}
+  - component: {fileID: 3781817339747855689}
   m_Layer: 0
   m_Name: Fruits
   m_TagString: Untagged
@@ -69,6 +70,24 @@ Transform:
   - {fileID: 1041201234353296979}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3781817339747855689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280538386759745380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8323d6e1949510b45a85eed0f7aa5573, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waterCost: 40
+  compostCost: 50
+  ureaCost: 40
+  seedCost: 40
+  cashGeneratedPerCycle: 30
+  timeBetweenCycles: 10
 --- !u!1 &3061657181325676220
 GameObject:
   m_ObjectHideFlags: 0
