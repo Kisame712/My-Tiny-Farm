@@ -170,6 +170,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1715935550724570473}
+  - component: {fileID: -3642261477841855131}
   m_Layer: 0
   m_Name: Vegetables
   m_TagString: Untagged
@@ -197,6 +198,24 @@ Transform:
   - {fileID: 5637371699935210778}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-3642261477841855131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5865086244155086144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8323d6e1949510b45a85eed0f7aa5573, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waterCost: 60
+  compostCost: 50
+  ureaCost: 60
+  seedCost: 40
+  cashGeneratedPerCycle: 50
+  timeBetweenCycles: 8
 --- !u!1 &6980610091251818096
 GameObject:
   m_ObjectHideFlags: 0
