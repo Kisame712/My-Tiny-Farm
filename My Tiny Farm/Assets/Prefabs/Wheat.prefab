@@ -86,8 +86,9 @@ MonoBehaviour:
   ureaCost: 10
   seedCost: 10
   cashGeneratedPerCycle: 5
-  timeBetweenCycles: 5
+  timeBetweenCycles: 2
   buildPosition: {fileID: 6347295321727583789, guid: 25010bb99f9f29e40add1475d145d0d9, type: 3}
+  removingItemSound: {fileID: 9179032188270804239, guid: 5ff4ea55f2a4d014eaa28f527096c535, type: 3}
 --- !u!65 &7258626098452244368
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -87,9 +87,10 @@ MonoBehaviour:
   compostCost: 50
   ureaCost: 40
   seedCost: 40
-  cashGeneratedPerCycle: 30
+  cashGeneratedPerCycle: 100
   timeBetweenCycles: 10
   buildPosition: {fileID: 6347295321727583789, guid: 25010bb99f9f29e40add1475d145d0d9, type: 3}
+  removingItemSound: {fileID: 9179032188270804239, guid: 5ff4ea55f2a4d014eaa28f527096c535, type: 3}
 --- !u!65 &7893359943324619324
 BoxCollider:
   m_ObjectHideFlags: 0

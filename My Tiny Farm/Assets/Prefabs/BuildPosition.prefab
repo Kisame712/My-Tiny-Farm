@@ -102,6 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 5173902919016603651}
+  spawnSound: {fileID: 7997999377872666656, guid: 8765ba5d55373cf42af746621121551a, type: 3}
 --- !u!33 &3613559556810580835
 MeshFilter:
   m_ObjectHideFlags: 0

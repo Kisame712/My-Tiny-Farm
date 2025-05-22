@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class FoodItem : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class FoodItem : MonoBehaviour
     float nextCycleTime;
 
     public GameObject buildPosition;
+    public GameObject removingItemSound;
 
     void Start()
     {
@@ -38,7 +40,12 @@ public class FoodItem : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Instantiate(buildPosition, transform.position - new Vector3(0, 1f, 0f), transform.rotation);
-        Destroy(gameObject);
+        if (!EventSystem.current.IsPointerOverGameObject())
+        {
+            Instantiate(buildPosition, transform.position - new Vector3(0, 1f, 0f), transform.rotation);
+            Instantiate(removingItemSound, transform.position, transform.rotation);
+            Destroy(gameObject);
+
+        }
     }
 }
