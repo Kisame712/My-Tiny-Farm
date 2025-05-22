@@ -25,7 +25,7 @@ public class ResourceManager : MonoBehaviour
         compostText.text = compostAmount.ToString();
         ureaText.text = ureaAmount.ToString();
         seedText.text = seedAmount.ToString();
-        cashText.text = cash.ToString();
+        cashText.text = "$" + cash.ToString();
 
     }
 }
