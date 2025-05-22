@@ -18,6 +18,7 @@ public class BuildPosition : MonoBehaviour
         {
             Instantiate(buildManager.itemToPlace, spawnPoint.position, spawnPoint.rotation);
             buildManager.itemToPlace = null;
+            Destroy(gameObject);
         }
     }
 

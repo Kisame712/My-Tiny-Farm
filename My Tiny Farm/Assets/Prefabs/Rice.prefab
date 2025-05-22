@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6327961604805251362}
   - component: {fileID: -7387187928523803453}
+  - component: {fileID: 421188540825269680}
   m_Layer: 0
   m_Name: Rice
   m_TagString: Untagged
@@ -70,6 +71,28 @@ MonoBehaviour:
   seedCost: 20
   cashGeneratedPerCycle: 15
   timeBetweenCycles: 7
+  buildPosition: {fileID: 6347295321727583789, guid: 25010bb99f9f29e40add1475d145d0d9, type: 3}
+--- !u!65 &421188540825269680
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6800853496487270429}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4, y: 1, z: 4}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!1001 &292532731278669928
 PrefabInstance:
   m_ObjectHideFlags: 0

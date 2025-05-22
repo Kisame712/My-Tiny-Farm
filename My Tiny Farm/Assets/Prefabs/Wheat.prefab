@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6064451985081926594}
   - component: {fileID: 8456114485123247933}
+  - component: {fileID: 7258626098452244368}
   m_Layer: 0
   m_Name: Wheat
   m_TagString: Untagged
@@ -86,6 +87,28 @@ MonoBehaviour:
   seedCost: 10
   cashGeneratedPerCycle: 5
   timeBetweenCycles: 5
+  buildPosition: {fileID: 6347295321727583789, guid: 25010bb99f9f29e40add1475d145d0d9, type: 3}
+--- !u!65 &7258626098452244368
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5179605557711134932}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4, y: 2, z: 4}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1001 &8677958133422223
 PrefabInstance:
   m_ObjectHideFlags: 0
