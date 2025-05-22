@@ -15,6 +15,8 @@ public class FoodItem : MonoBehaviour
     public float timeBetweenCycles;
     float nextCycleTime;
 
+    public GameObject buildPosition;
+
     void Start()
     {
         resourceManager = FindObjectOfType<ResourceManager>();
@@ -32,5 +34,11 @@ public class FoodItem : MonoBehaviour
             nextCycleTime = Time.time + timeBetweenCycles;
             resourceManager.cash += cashGeneratedPerCycle;
         }
+    }
+
+    private void OnMouseDown()
+    {
+        Instantiate(buildPosition, transform.position - new Vector3(0, 1f, 0f), transform.rotation);
+        Destroy(gameObject);
     }
 }
