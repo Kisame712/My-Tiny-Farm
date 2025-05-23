@@ -18,6 +18,7 @@ public class FoodItem : MonoBehaviour
 
     public GameObject buildPosition;
     public GameObject removingItemSound;
+    public GameObject removeItemEffect;
 
     void Start()
     {
@@ -44,6 +45,7 @@ public class FoodItem : MonoBehaviour
         {
             Instantiate(buildPosition, transform.position - new Vector3(0, 1f, 0f), transform.rotation);
             Instantiate(removingItemSound, transform.position, transform.rotation);
+            Instantiate(removeItemEffect, transform.position, transform.rotation);
             Destroy(gameObject);
 
         }

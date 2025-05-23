@@ -22,6 +22,8 @@ public class ResourceManager : MonoBehaviour
     public GameObject winText;
     public GameObject winSound;
 
+    bool displayedOnce = false;
+
     // Update is called once per frame
     void Update()
     {
@@ -30,16 +32,24 @@ public class ResourceManager : MonoBehaviour
         compostText.text = compostAmount.ToString();
         ureaText.text = ureaAmount.ToString();
         seedText.text = seedAmount.ToString();
-        cashText.text = "$" + cash.ToString();
+        cashText.text = "$ " + cash.ToString();
 
     }
 
     void PlayerWin()
     {
-        if(cash >= winAmount)
+        if(cash >= winAmount && !displayedOnce)
         {
-            winSound.SetActive(true);
-            winText.SetActive(true);
+            StartCoroutine(DisplayWinMessage());
         }
+    }
+
+    IEnumerator DisplayWinMessage()
+    {
+        winSound.SetActive(true);
+        winText.SetActive(true);
+        yield return new WaitForSeconds(5f);
+        Destroy(winText);
+        displayedOnce = true;
     }
 }

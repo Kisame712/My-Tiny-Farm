@@ -219,6 +219,7 @@ MonoBehaviour:
   timeBetweenCycles: 8
   buildPosition: {fileID: 6347295321727583789, guid: 25010bb99f9f29e40add1475d145d0d9, type: 3}
   removingItemSound: {fileID: 9179032188270804239, guid: 5ff4ea55f2a4d014eaa28f527096c535, type: 3}
+  removeItemEffect: {fileID: 5590409053880288509, guid: c2f91b499e7679c489388df4b8259715, type: 3}
 --- !u!65 &884614962139808112
 BoxCollider:
   m_ObjectHideFlags: 0
